@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+        header {
+            background-color: #2874f0;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flipkart</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>Search</button>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#deals">Deals</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Flipkart</h2>
+            <p>Your one-stop shop for all your needs.</p>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="product">
+                <h3>Electronics</h3>
+                <p>Explore the latest gadgets and devices.</p>
+            </div>
+            <div class="product">
+                <h3>Fashion</h3>
+                <p>Find trendy apparel and accessories.</p>
+            </div>
+            <div class="product">
+                <h3>Home Appliances</h3>
+                <p>Upgrade your home with the best appliances.</p>
+            </div>
+        </section>
+        <section id="deals">
+            <h2>Today's Deals</h2>
+            <p>Don't miss out on our exclusive discounts and offers.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? We're here to help!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flipkart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

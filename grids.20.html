@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids in css</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .parent{
+           display: grid;
+           grid-template-columns: repeat(auto-fit,minmax(250px));
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+        }
+        .h1{
+            background-color: coral;
+            width:100vw;
+        }
+        .h2{
+            background-color:blue;
+            width:100vw;
+        }
+        .h3{
+            background-color: orange;
+            width:100vw;
+        }
+        .h4{
+            background-color: darkgray;
+            width:100vw;
+        }
+        .h5{
+            background-color: greenyellow;
+            width:100vw;
+        }
+        .h{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            padding:10px;
+            
+        
+        }
+    </style>
+</head>
+<body>
+ <div class="parent">
+    <div class="h h1">im header</div>
+    <div class="h h2"> im nav</div>
+    <div class="h h3"> im middle</div>
+    <div class="h h4"> im aside</div>
+    <div class="h h5">im footer</div>
+ </div>
+    
+</body>
+</html>

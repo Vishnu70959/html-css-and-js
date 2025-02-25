@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>units and fonts in css</title>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jaro:opsz@6..72&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    .parent{
+
+        background-color:rgb(25, 209, 31) ;
+        height:100px;
+       
+    }
+   .card{
+        border: 5px solid gray;
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        padding:20px 10px 20px 20px; 
+        align-items: center;
+        margin:20px;
+        font-size: 15px;
+        background-color: rgb(235, 235, 22);
+
+    }
+    .card.name{
+        font-size: 3em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .card.course{
+        font-size: 2em;
+    }
+    .card.location{
+        font-size: 1em;
+    }
+    .card .imgdiv{
+        background-color: rgb(158, 61, 98);
+        width:200px;
+        height:200px;
+        border-radius:50% ;
+    }
+    .logo .img {
+        width:100vw;
+        height:100vh;
+        background-color: aquamarine;
+    }
+    .card .red{
+        background-color: darkred;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="parent">
+       
+    </div>
+    <div class="card">
+            <img class="red"src="./css images/relogo.png" width="100px" height="125px" alt="">
+        <img src="./css images/student.png"width="200px" alt="">
+       <p class="name"> student name</p>
+       <p class="course"> web development</p>
+       <p class="location"> hyderabad</p>
+    </div>
+    </div>
+</body>
+</html>

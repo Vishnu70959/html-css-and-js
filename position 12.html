@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Courier New', Courier, monospace;
+        }
+         .card {
+            width:fit-content;
+            height:fit-content;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+            margin:30px 30px;
+            border:1px solid gray;
+            border-radius: 10px;
+            padding:10px;
+            justify-content: center;
+            background-color: #fff;
+            position:fixed;
+            bottom:50px;
+            right:50px;
+           transition:1s;
+        }
+        .sec{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec1{
+            background-color: aquamarine;
+        }
+        .sec2{
+            background-color: blueviolet;
+        }
+        .sec3{
+            background-color:orange;
+        }
+        .sec4{
+            background-color: burlywood;
+        }
+        .sec5{
+            background-color: chartreuse;
+        }
+        .sec6{
+            background-color: chocolate;
+        }
+        .sec7{
+            background-color:brown;
+        }
+        .sec8{
+            background-color: darkgray;
+        }
+        .sec9{
+            background-color: deeppink;
+        }
+        .sec10{
+            background-color: darkviolet;
+        }
+        .sec11{
+            background-color: green;
+        }
+        .sec12{
+            background-color:darkolivegreen;
+        }
+        .nav{
+            height:50px;
+            background-color: #fff;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gold;
+            position:fixed;
+            width:100vw;
+            z-index: 100;
+        }
+        .parent .card .icons{
+            color:black;
+        }
+
+        .newcard{
+            border:1px solid gray;
+            position:sticky;
+            top:50px;
+        }
+        .parent .card .icons .fa-brands:hover{
+            color:blue;
+        }
+    
+
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1> NEW NAV BAR</h1>
+    </div>
+  <div class="sec sec1">
+    <h1> hey im section 1</h1></div>
+  <div class="sec sec2">
+    <h1> hey im section 2</h1></div>
+  <div class="sec sec3">
+    <h1> hey im section 3</h1></div>
+  <div class="sec sec4">
+    <h1> hey im section 4</h1></div>
+  <div class="sec sec5">
+    <h1> hey im section 5</h1></div>
+  <div class="sec sec6">
+    <h1> hey im section 6</h1></div>
+  <div class="sec sec7">
+    <h1> hey im section 7</h1></div>
+  <div class="sec sec8">
+    <h1> hey im section 8</h1></div>
+  <div class="sec sec9">
+    <h1> hey im section 9</h1></div>
+  <div class="sec sec10">
+    <h1> hey im section 10</h1></div>
+    
+  
+    <div class="parent">
+        <div class="card">
+           <a href="" class="icons"> <i class="fa-brands  fa-css"></i> </a>
+            <a href="" class="icons"> <i class="fa-brands fa-whatsapp"></i> </a>
+            <a href="" class="icons"> <i class="fa-brands fa-instagram"></i> </a>
+           <a href="" class="icons"> <i class="fa-brands fa-facebook"></i> </a>
+           <a href="" class="icons"> <i class="fa-brands fa-skype"></i> </a>
+           <a href="" class="icons"> <i class="fa-brands fa-snapchat"></i> </a>
+            <a href="" class="icons"> <i class="fa-brands fa-telegram"></i> </a>
+            <a href="" class="icons"> <i class="fa-brands fa-google"></i> </a>
+           
+        </div>
+    </div>
+    <div class="newcard">
+            <marquee behavior="alternate" direction="" scrollamount="10"> <h1> HI IM NEW CARD</h1></marquee>
+    </div>
+
+    <div class="sec sec11">
+        <h1> hey im section 11</h1>
+    </div>
+    <div class="sec sec12">
+        <h1> hey im section 12</h1>
+    </div>
+</body>
+</html>

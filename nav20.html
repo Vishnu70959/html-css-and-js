@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        .nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px 20px;
+            flex-wrap: wrap;
+        }
+        .nav .links ul{
+            display:flex;
+            list-style: none;
+            gap:20px;
+        }
+        .nav .links ul li a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .hero{
+            background-color: orange;
+            height:30vh;
+        }
+        .nav .btns .wb,.bb{
+            padding:20px 30px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            color:#fff;
+
+        }
+        .nav .btns .wb{
+            border:1px solid #fff;
+            font-size: 10px;
+            cursor:pointer;
+        }
+        .nav .btns .bb{
+            background-color:black ;
+            font-size: 10px;
+            cursor:pointer;
+        }
+        .icon{
+            color:#fff;
+            font-size: 30px;
+            display:none;
+        }
+        .hero-left-img{
+            position: relative;
+
+        }
+        .hero-right-img{
+            position: relative;
+            top:0px;
+            left:300px;
+            
+        }
+        .hero-content{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        @media(max-width:1050px){
+
+            .hero{
+                background-color: green;
+            }
+            .nav .links{
+                display:none;
+            }
+            .nav{
+                padding:10px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="hero">
+    <div class="nav">
+        <div class="logo">
+            <img src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png" width="150px" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">contact</a>
+                <li> <a href="#">services</a></li>
+                <li> <a href="#">blogs</a></li>
+                <li> <a href="#">products</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="wb"> sign up </button>
+            <button class="bb"> AWARDS </button>
+        </div>
+                <i class="fa-solid fa-bars" class="icon"></i>
+    </div>
+    <div class="hero-content">
+        <div class="title">
+            <h1>order food and groceries discover the best restaurants swiggy it  </h1>
+        </div>
+        <div class="location">
+            <div class="select-box">
+                <select name="" id=""></select>
+            </div>
+            <div class="input-box">
+
+            </div>
+
+        </div>
+        
+    </div>
+    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" class="hero-left-img" alt="">
+    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" class="hero-right-img" alt="">
+
+   </div>
+   
+
+   <div class="sample">
+    
+
+   </div>
+ 
+</body>
+</html>

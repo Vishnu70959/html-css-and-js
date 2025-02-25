@@ -1,0 +1,32 @@
+function muteFunction(){
+alert("function is muted")
+}
+muteFunction()
+
+function instagram(){
+alert("instagram App")
+}
+instagram()
+
+
+function identifier(){
+alert("function is working")
+}
+identifier()
+
+
+
+
+
+
+<button onclick="muteFunction()">
+mute
+</button>
+ 
+<button onclick="instagram()">
+insta
+</button>
+
+ <button onclick="identifier()">
+ ident
+ </button>

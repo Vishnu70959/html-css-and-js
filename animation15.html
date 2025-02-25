@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .parent{
+            height:100vh;
+            background-color: black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child{
+            width:100px;
+            height:100px;
+            border:5px solid#e1d6d6;
+            border-top: 4px solid gray;
+            border-radius: 50%;
+            animation:first 500ms linear infinite;
+            
+
+        }
+        .sub1,.sub2{
+            width:50%;
+           /* border:1px solid #fff; */
+            height:100vh;
+            margin:10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub1{
+            background-color: burlywood;
+            border:1px solidgray;
+        }
+        .outer{
+            width:100px ;
+            height:100px;
+            border:5px solid transparent;
+            border-radius: 50%;
+            border-top: 5px solid gray;
+            border-bottom: 5px solid#fff;
+        }
+
+        .inner{
+            width:100px ;
+            height:100px;
+            border:1px solid transparent;
+            border-left: 4px solid green;
+            border-right: 4px solid green;
+            border-radius: 50%;
+            display:flex;
+            justify-content: center;
+            position:relative;
+            top:20px;
+
+        }
+        .round{
+            animation: rotate 1s linear infinite;
+        }
+        @keyframes first{
+            from{
+                transform: rotate(360deg);
+            }
+            to{
+
+            }
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform:rotate(40deg);
+            }
+            50%{
+                transform: rotate(160deg);
+            }
+            75%{
+                transform: rotate(270);
+            }
+
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <div class="sub1">
+        <div class="child">
+
+        </div>
+       </div>
+
+       <div class="sub2"></div>
+       <div class="round inner">
+        <div class="round outer">
+            
+        </div>
+       </div>
+    </div>
+        <br>
+    <div class="parent2">
+       
+    </div>
+</body>
+</html>

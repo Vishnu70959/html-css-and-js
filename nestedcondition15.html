@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> control statements</title>
+    </head>
+</html>
+</head>
+<body>
+    
+    
+
+ 
+
+            <script>
+                   /*
+       1. Need to show all options for user
+       2.user requirement(need to take confirmation from user)
+       3.need to work on respective operation
+
+       options:
+       --- check Balance(1)
+       --- withdraw(2)
+       --- deposit(3)
+       --- pinGeneration(4)
+       --- miniStatements(5)
+    
+
+
+        */8
+         acBalance=10000;
+        storedPin=2222;
+
+        let userinput=parseInt(prompt("choose One option from below \n 1.check Balance \n 2.withdraw \n 3.deposit \n 4.pin Generation \n 5.mini Statements \n "))
+
+        if(userinput === 1){
+        alert("this is check Balance")
+      let pinConfirm=parseInt(prompt("please enter your 4 digit pin:"))
+
+        if(storedPin===pinConfirm){
+            console.log("your balance:",acBalance)
+        }
+        else{
+            console.log("hey check your pin")
+        }
+        }
+
+        else if(userinput===2)
+         {
+            alert("this is withdraw")
+           
+            let withDraw=parseInt(prompt("Enter Amount to withdraw:"))
+            let pinConfirm=parseInt(prompt("Enter your 4 digits pin:"))
+
+            if(acBalance>=withDraw &&pinConfirm===storedPin){
+                acBalance-=withDraw
+               console.log("Transaction successful.with amount",withDraw)
+
+               let balanceCheck= confirm("Do you want to check balance?")
+
+               if(balanceCheck== true)
+               console.log("Account Balance:",acBalance)
+            }
+            else{
+                alert("Thank you visit again")
+            }
+        }
+
+        else if(userinput===3)
+        {
+            alert("this is deposit")
+
+            let depMoney=parseInt(prompt("Enter Amount to withdraw:"))
+            let pinConfirm=parseInt(prompt("Enter your 4 digits pin:"))
+
+            if(pinConfirm===storedPin){
+                acBalance+=depMoney
+               console.log("process completed",depMoney)
+
+               let balanceCheck= confirm("Do you want to check balance?")
+
+               if(balanceCheck== true)
+               console.log("Account Balance:",acBalance)
+            }
+            else{
+                alert("Thank you visit again")
+            }
+        }
+
+        else if(userinput===4)
+        {
+            alert("this is pinGeneration")
+        }
+
+        else if(userinput===5)
+        {
+            alert("this is miniStatements")
+        }
+
+        else{
+            alert("this is invalid")
+        }
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+      
+   
+</body>
+</html>

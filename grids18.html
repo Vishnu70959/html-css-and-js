@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in css </title> 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            color:#fff;
+        }
+        .nav{
+            background-color: orangered;
+            grid-column: span 3;
+        }
+        .sidebar{
+            background-color: blueviolet;
+        }
+        .content{
+            background-color: darkmagenta;
+        }
+        .aside{
+            background-color:saddlebrown;
+        }
+        .footer{
+            background-color:navy;
+           grid-column: span 3; 
+
+        }
+
+        .parent{
+            display: grid;
+            height:100vh;
+            grid-template-columns: 20vw 50vw 30vw;
+            grid-gap:5px;
+            grid-template-rows: 10% 70% 20%;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="parent">
+
+           <div class="nav">
+            <P> Im nav bar</P>
+           </div>
+
+           <div class="sidebar">
+            <P> Im side bar</P>
+           </div>
+
+           <div class="content">
+            <p> im content</p>
+           </div>
+
+           <div class="aside">
+            <p> im aside</p>
+           </div>
+
+           <div class="footer">
+            <P> im footer</P>
+           </div>
+    </div>
+    
+</body>
+</html>

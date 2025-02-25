@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         .sidebar{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height:100vh;
+            padding:20px 20px;
+            width:300px;
+            background-color: gray;
+        }
+        .sidebar .btns button{
+            width:110px;
+            padding:10px ;
+            height:35px;
+        }
+        
+        .sidebar .links ul{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+             list-style-type: none;  
+             background-color: #fff;
+             width:80px;
+             height:200px;  
+        }
+        .sidebar .links ul li a{
+            text-decoration: none;
+        }
+        .btns{
+            font-family:sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./css images/raghu.webp"width="200px" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">about us</a></li>
+                <li> <a href="#">contact us</a></li>
+                <li> <a href="#">services</a></li>
+                <li> <a href="#">address</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button>signup</button>
+            <button>login</button>
+            <button>password</button>
+        </div>
+    </div>
+</body>
+</html>

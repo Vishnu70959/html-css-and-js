@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .parent{
+        height:10em;
+        background-color: blueviolet;
+      
+    }
+    .parent{
+        height:100px;
+        background:linear-gradient( to top left, orange,yellow,white,darkblue,green);
+    }
+   .card{
+        border: 3px solid gray;
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        width: fit-content;
+        margin: 15px;
+        padding:5px 10px;
+        align-items: center;
+    }
+    .card .name{
+        font-size: 3em;
+    }
+    .card .course{
+        font-size: 2em;
+    }
+    .card .location{
+        font-size: 1em;
+    }
+    .card .imgdiv{
+        border-radius: 60%;
+        background-color: rgb(67, 7, 7);
+    }
+    .card .relogo{
+        border-radius: 50%;
+        background-color: rgba(60, 13, 83, 0.308);
+    }
+    .toyota{
+        background-color: rgba(20,30,40,50);
+        border:1px solid gray;
+        border-radius: 5px;
+        margin:10px;
+        padding:10px 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+     
+    </div>
+    <center>
+        <div class="card">
+            <img class="relogo"src="./css images/relogo.png" width="200px" alt="">
+           <div class="imgdiv">
+            <img src="./css images/student.png" width="200px" alt="">
+           </div>
+            <h3 class="name">vishnu</h3>
+            <h3 class="course">java</h3>
+            <h3 class="location">hyderabad</h3>
+        </div>
+        <img class="toyota" src="./css images/download.png" width="200px;" alt="">
+        
+    </center>
+
+    
+</body>
+</html>

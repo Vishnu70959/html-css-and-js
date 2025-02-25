@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            box-shadow: 0lvi;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            margin:10px 20px;
+            color:darkblue;
+            background-color:chocolate;
+        }
+        nav .links ul li{
+            display:flex;
+            text-align: center;
+            background-color:darkturquoise; 
+        }
+        nav .links ul li a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .btns button{
+            color:mediumpurple;
+            margin:1px solid gray;
+            padding:5px 7px;   
+        }
+        .card{
+            width:300px;
+            height:250px;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+        }
+        .card img{
+            width:230px;
+        }
+
+        .parent{
+           display:flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           height:90vh;
+           gap:20px;
+        }
+        .fast{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color:red;
+            background-color: aquamarine;
+            font-family: monospace;
+            height:fit-content;
+        }
+        .cake{
+            color:brown
+
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./css images/food logo.png" width="200px"alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> <a href="#">home</a></li>
+                <li><i class="fa-regular fa-address-card"></i> <a href="#">about us</a></li>
+                <Li><i class="fa-brands fa-servicestack"></i> <a href="#">services</a></Li>
+                <Li><i class="fa-solid fa-circle-info"></i> <a href="#">information</a></Li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button>login</button>
+            <button>signup</button>
+            <button>forgot password</button>
+        </div>
+    </nav>
+    <CENTER>
+        <h1 class="fast">FAST FOODS</h1>
+    </CENTER>
+                
+    <div class="parent">
+        <div class="card">
+            <img src="./css images/cake.png" alt="">
+            <h2 class="cake">cake is most eaten fastfoods</h2>
+            <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 class="price">5💲</h3>
+        </div>
+      
+        <div class="card">
+            <img src="./css images/frenchfries.png" alt="">
+            <h2 class="cake">french fries latin name from france</h2>
+            <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 class="price">6.23💲</h3>
+        </div>
+
+        <div class="card">
+            <img src="./css images/burger.png" alt="">
+            <h2 class="cake">burger king</h2>
+            <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 class="price">7.25💲</h3>
+        </div>
+
+        <div class="card">
+            <img src="./css images/dates.png" alt="">
+            <h2 class="cake">dates</h2>
+            <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 class="price">8.03💲</h3>
+        </div>
+
+        <div class="card">
+            <img src="./css images/almonds.png" alt="">
+            <h2 class="cake">Almonds</h2>
+            <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 class="price">9💲</h3>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

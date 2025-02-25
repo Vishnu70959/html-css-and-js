@@ -1,0 +1,11 @@
+let userInput=prompt("enter data:")
+console.log(userInput.trim().length)
+console.log("userInput.trim()")
+
+
+
+
+
+let userInput=prompt("enter data:")
+console.log(userInput.trim().length)
+console.log(userInput.trimEnd())
